@@ -43,3 +43,4 @@ fabric.properties
 
 #remove Config File
 src/main/java/me/noahp78/travel/Config.java
+/target/
