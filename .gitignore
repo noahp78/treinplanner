@@ -28,6 +28,7 @@
 
 # IntelliJ
 /out/
+/target/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
@@ -43,4 +44,3 @@ fabric.properties
 
 #remove Config File
 src/main/java/me/noahp78/travel/Config.java
-/target/
