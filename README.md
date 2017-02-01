@@ -3,6 +3,7 @@ Automaticly put NS travel information in your calendar (ICAL webservice)
 
 ## How it works
 This program exposes a service on port 8000. (/ical). When you pass the following arguments
+
 | Argument | What does it do?                                                                    |
 |----------|-------------------------------------------------------------------------------------|
 | start    | The start "NS station" where you start your journey from every day.                 |
