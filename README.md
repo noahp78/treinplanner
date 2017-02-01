@@ -15,5 +15,23 @@ It will respond with travel information in ICAL format that you can add to your 
 ## Why?
 I hated looking in the NS app every single evening to see how early my train departs. and AUTOMATION!
 
-## How to host
-It should all work if you simply compile the jar and run the travelapi-jar-with-dependencies.jar.
+## DEMO
+You can use this service at http://stream1-nas.cloudapp.net:8000/ical
+
+
+## Self hosting
+First you have to get the NS API login details (https://www.ns.nl/ews-aanvraagformulier/?1)
+When you have those you need to create a class "Config" in me.noahp78.travel that contains the following:
+
+  public class Config {
+      public static final String NS_USER="YOURUSERNAME";
+      public static final String NS_PASS="YOURPASSWORD";
+  }
+
+Now use maven to compile the jar with dependencies:
+   mvn package
+
+And now you are ready to run the created jar file (target/travelapi-jar-with-dependencies.jar)
+  java - jar travelapi-jar-with-dependencies.jar
+  
+Tada it works!
